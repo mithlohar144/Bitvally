@@ -65,7 +65,7 @@ export function HeroSection() {
                 <span className="opacity-75">|</span>
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-xl mx-auto md:mx-0">
+            <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-xl mx-auto md:mx-0"> {/* Changed mb-10 to mb-12 */}
               CodeCanvas delivers cutting-edge software and web solutions, empowering businesses to excel in the evolving digital landscape. We partner with you to achieve impactful results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

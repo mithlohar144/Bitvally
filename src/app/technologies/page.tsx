@@ -7,7 +7,7 @@ import { technologies, Technology as TechnologyType, getTechIcon } from '@/lib/d
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 // export const metadata: Metadata = {
 //   title: 'Technologies We Use',
@@ -109,3 +109,4 @@ export default function TechnologiesPage() {
     </>
   );
 }
+

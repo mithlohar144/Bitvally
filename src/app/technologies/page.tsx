@@ -1,13 +1,13 @@
 
 "use client";
 
-import type { Metadata } from 'next';
+// import type { Metadata } from 'next'; // Metadata is commented out, no need to import
 import { Section, SectionHeader } from '@/components/common/Section';
 import { technologies, Technology as TechnologyType, getTechIcon } from '@/lib/data';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion'; // Corrected import
 
 // export const metadata: Metadata = {
 //   title: 'Technologies We Use',
@@ -44,11 +44,11 @@ export default function TechnologiesPage() {
     <>
       <Section className="bg-gradient-to-b from-primary/5 to-background">
         <SectionHeader
-          title="Our Technology Stack"
-          subtitle="Tools That Power Our Solutions"
+          title="Cutting-Edge Technologies"
+          subtitle="The Foundation of Our Innovative Solutions"
         />
         <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-10">
-          We leverage a diverse and modern technology stack to build scalable, secure, and high-performance digital products. Our expertise spans across various domains, ensuring we choose the right tools for your specific project needs.
+          At CodeCanvas, we harness the power of the latest and most robust technologies to deliver exceptional digital experiences. Our carefully selected stack ensures scalability, security, and performance for every project.
         </p>
       </Section>
 
@@ -109,4 +109,3 @@ export default function TechnologiesPage() {
     </>
   );
 }
-

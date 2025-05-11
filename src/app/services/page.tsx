@@ -13,7 +13,7 @@ import { cn } from '@/lib/utils';
 // or use a more complex setup.
 // export const metadata: Metadata = {
 //   title: 'Our Services',
-//   description: 'Explore the comprehensive range of software and web development services offered by CodeCanvas, including web development, software development, mobile apps, UI/UX design, and SEO.',
+//   description: 'Explore the comprehensive range of software and web development services offered by Bitvalley, including web development, software development, mobile apps, UI/UX design, and SEO.',
 // };
 
 
@@ -76,7 +76,7 @@ const ServiceCard = ({ service, index }: { service: ServiceType; index: number }
 export default function ServicesPage() {
   // Set title dynamically on client side if needed, or ensure static metadata is sufficient
   useEffect(() => {
-    document.title = "Our Services | CodeCanvas";
+    document.title = "Our Services | Bitvalley";
   }, []);
 
   return (
@@ -87,7 +87,7 @@ export default function ServicesPage() {
           subtitle="Comprehensive Digital Solutions"
         />
         <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-12 md:mb-16">
-          At CodeCanvas, we offer a wide array of services designed to bring your digital visions to life. From initial concept to final deployment and beyond, our team is dedicated to delivering excellence and innovation in every project.
+          At Bitvalley, we offer a wide array of services designed to bring your digital visions to life. From initial concept to final deployment and beyond, our team is dedicated to delivering excellence and innovation in every project.
         </p>
       </Section>
       

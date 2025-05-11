@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about CodeCanvas, our mission, vision, and the values that drive our software and web development services.',
+  description: 'Learn about Bitvalley, our mission, vision, and the values that drive our software and web development services.',
 };
 
 const teamMembers = [
@@ -28,12 +28,12 @@ export default function AboutPage() {
     <>
       <Section className="bg-gradient-to-b from-primary/5 to-background">
         <SectionHeader
-          title="About CodeCanvas"
+          title="About Bitvalley"
           subtitle="Crafting Digital Excellence"
         />
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg text-muted-foreground mb-8 fade-in" style={{ animationDelay: '0.2s' }}>
-            Founded on the principles of innovation, quality, and collaboration, CodeCanvas is a dynamic software and web development company dedicated to helping businesses thrive in the digital age. We believe that technology, when expertly crafted and thoughtfully implemented, can transform organizations and create lasting value.
+            Founded on the principles of innovation, quality, and collaboration, Bitvalley is a dynamic software and web development company dedicated to helping businesses thrive in the digital age. We believe that technology, when expertly crafted and thoughtfully implemented, can transform organizations and create lasting value.
           </p>
           <p className="text-lg text-muted-foreground fade-in" style={{ animationDelay: '0.4s' }}>
             Our journey began with a simple mission: to bridge the gap between visionary ideas and tangible digital realities. Today, we are proud to have partnered with a diverse range of clients, from startups to established enterprises, delivering solutions that not only meet their immediate needs but also position them for future success.
@@ -56,7 +56,7 @@ export default function AboutPage() {
           <div className="fade-in" style={{ animationDelay: '0.8s' }}>
             <Image
               src="https://picsum.photos/seed/about-team/600/450"
-              alt="CodeCanvas Team Collaboration"
+              alt="Bitvalley Team Collaboration"
               data-ai-hint="team collaboration"
               width={600}
               height={450}
@@ -90,7 +90,7 @@ export default function AboutPage() {
       {/* Optional: Team Section */}
       {/* 
       <Section>
-        <SectionHeader title="Meet Our Team" subtitle="The People Behind CodeCanvas" />
+        <SectionHeader title="Meet Our Team" subtitle="The People Behind Bitvalley" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <div key={member.name} className="text-center fade-in" style={{ animationDelay: `${1.8 + index * 0.2}s` }}>

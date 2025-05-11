@@ -12,7 +12,7 @@ import type { Metadata } from 'next'; // Import Metadata type
 // Static metadata for client component
 export const metadata: Metadata = {
   title: 'Technologies We Use',
-  description: 'Discover the robust and modern technology stack CodeCanvas employs, including React, Django, Laravel, Flutter, and more, to build exceptional digital products.',
+  description: 'Discover the robust and modern technology stack Bitvalley employs, including React, Django, Laravel, Flutter, and more, to build exceptional digital products.',
 };
 
 
@@ -34,9 +34,9 @@ const cardVariants = {
 export default function TechnologiesPage() {
   const [activeTab, setActiveTab] = useState<string>(techCategories[0]);
   
-  // useEffect(() => { // This is not needed if metadata is static and exported
-  //   document.title = "Technologies We Use | CodeCanvas";
-  // }, []);
+  useEffect(() => { 
+    document.title = "Technologies We Use | Bitvalley";
+  }, []);
 
   const filteredTechnologies = activeTab === "All" 
     ? technologies 
@@ -50,7 +50,7 @@ export default function TechnologiesPage() {
           subtitle="The Foundation of Our Innovative Solutions"
         />
         <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-10">
-          At CodeCanvas, we harness the power of the latest and most robust technologies to deliver exceptional digital experiences. Our carefully selected stack ensures scalability, security, and performance for every project.
+          At Bitvalley, we harness the power of the latest and most robust technologies to deliver exceptional digital experiences. Our carefully selected stack ensures scalability, security, and performance for every project.
         </p>
       </Section>
 

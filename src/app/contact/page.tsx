@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with CodeCanvas for your software and web development needs. Reach out via our contact form, email, or phone.',
+  description: 'Get in touch with Bitvalley for your software and web development needs. Reach out via our contact form, email, or phone.',
 };
 
 export default function ContactPage() {
@@ -48,8 +48,8 @@ export default function ContactPage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-6 w-6 text-primary" />
-                  <a href="mailto:info@codecanvas.com" className="text-foreground hover:text-primary transition-colors">
-                    info@codecanvas.com
+                  <a href="mailto:info@bitvalley.com" className="text-foreground hover:text-primary transition-colors">
+                    info@bitvalley.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">

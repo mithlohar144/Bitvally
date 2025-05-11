@@ -67,6 +67,7 @@ export interface PortfolioItem {
   title: string;
   category: string;
   imageUrl: string;
+  dataAiHint?: string;
   description: string;
   techStack: string[];
   liveLink?: string;
@@ -151,7 +152,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: "testimonial-1",
-    quote: "CodeCanvas transformed our online presence with a stunning website and an effective SEO strategy. Our traffic has increased by 200%!",
+    quote: "Bitvalley transformed our online presence with a stunning website and an effective SEO strategy. Our traffic has increased by 200%!",
     author: "Jane Doe",
     company: "CEO, Innovate Solutions",
     imageUrl: "https://picsum.photos/seed/jane-doe/100/100",
@@ -159,7 +160,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "testimonial-2",
-    quote: "The mobile app developed by CodeCanvas exceeded our expectations. It's intuitive, fast, and our users love it.",
+    quote: "The mobile app developed by Bitvalley exceeded our expectations. It's intuitive, fast, and our users love it.",
     author: "John Smith",
     company: "CTO, MobileFirst Corp",
     imageUrl: "https://picsum.photos/seed/john-smith/100/100",
@@ -167,7 +168,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "testimonial-3",
-    quote: "Working with CodeCanvas was a breeze. Their team is professional, responsive, and delivered a high-quality software product on time.",
+    quote: "Working with Bitvalley was a breeze. Their team is professional, responsive, and delivered a high-quality software product on time.",
     author: "Alice Brown",
     company: "Product Manager, TechGrow Inc.",
     imageUrl: "https://picsum.photos/seed/alice-brown/100/100",
@@ -175,7 +176,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "testimonial-4",
-    quote: "The UI/UX design for our platform was exceptional. CodeCanvas truly understands user-centric design principles.",
+    quote: "The UI/UX design for our platform was exceptional. Bitvalley truly understands user-centric design principles.",
     author: "Robert Green",
     company: "Founder, UserJoy Ltd.",
     imageUrl: "https://picsum.photos/seed/robert-green/100/100",

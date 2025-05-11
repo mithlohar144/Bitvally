@@ -15,7 +15,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // export const metadata: Metadata = {
 //   title: 'Our Portfolio',
-//   description: 'Discover a selection of our successfully completed projects at CodeCanvas, showcasing our expertise in web development, software solutions, and mobile applications.',
+//   description: 'Discover a selection of our successfully completed projects at Bitvalley, showcasing our expertise in web development, software solutions, and mobile applications.',
 // };
 
 const cardVariants = {
@@ -28,7 +28,7 @@ export default function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState<string>("All");
 
   useEffect(() => {
-    document.title = "Our Portfolio | CodeCanvas";
+    document.title = "Our Portfolio | Bitvalley";
   }, []);
 
   const filteredItems = useMemo(() => {

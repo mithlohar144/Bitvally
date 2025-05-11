@@ -26,9 +26,9 @@ export function GoogleMap({ apiKey }: GoogleMapProps) {
           defaultZoom={12}
           gestureHandling={"greedy"}
           disableDefaultUI={true}
-          mapId="codecanvas_map" // Optional: for cloud-based map styling
+          mapId="bitvalley_map" // Optional: for cloud-based map styling
         >
-          <AdvancedMarker position={position} title={"CodeCanvas HQ"} />
+          <AdvancedMarker position={position} title={"Bitvalley HQ"} />
         </Map>
       </APIProvider>
     </div>

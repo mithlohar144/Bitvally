@@ -41,7 +41,7 @@ export function Header() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary hover:opacity-80 transition-opacity">
-          CodeCanvas
+          Bitvalley
         </Link>
 
         {/* Desktop Navigation */}
@@ -73,7 +73,7 @@ export function Header() {
             <SheetContent side="right" className="w-[280px] bg-card p-6">
               <div className="flex flex-col space-y-4">
                 <Link href="/" className="text-2xl font-bold text-primary mb-6" onClick={() => setMobileMenuOpen(false)}>
-                  CodeCanvas
+                  Bitvalley
                 </Link>
                 {navItems.map((item) => (
                   <Button

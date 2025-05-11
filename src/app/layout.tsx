@@ -9,33 +9,33 @@ import { Toaster } from "@/components/ui/toaster"; // For contact form feedback
 
 export const metadata: Metadata = {
   title: {
-    default: 'CodeCanvas - Innovative Software & Web Development',
-    template: '%s | CodeCanvas',
+    default: 'Bitvalley - Innovative Software & Web Development',
+    template: '%s | Bitvalley',
   },
-  description: 'CodeCanvas is a premier software and website development company specializing in creating custom digital solutions that drive business growth. We offer web development, software development, mobile app development, UI/UX design, and SEO services.',
-  keywords: ['software development', 'web development', 'mobile app development', 'ui/ux design', 'seo', 'digital marketing', 'CodeCanvas'],
-  authors: [{ name: 'CodeCanvas' }],
+  description: 'Bitvalley is a premier software and website development company specializing in creating custom digital solutions that drive business growth. We offer web development, software development, mobile app development, UI/UX design, and SEO services.',
+  keywords: ['software development', 'web development', 'mobile app development', 'ui/ux design', 'seo', 'digital marketing', 'Bitvalley'],
+  authors: [{ name: 'Bitvalley' }],
   // Add Open Graph tags for better social media sharing
   openGraph: {
-    title: 'CodeCanvas - Innovative Software & Web Development',
+    title: 'Bitvalley - Innovative Software & Web Development',
     description: 'Custom digital solutions to elevate your business.',
     type: 'website',
     locale: 'en_US',
     url: 'https://yourdomain.com', // Replace with your actual domain
-    siteName: 'CodeCanvas',
+    siteName: 'Bitvalley',
     // images: [ // Add a good OG image
     //   {
     //     url: 'https://yourdomain.com/og-image.png',
     //     width: 1200,
     //     height: 630,
-    //     alt: 'CodeCanvas Logo',
+    //     alt: 'Bitvalley Logo',
     //   },
     // ],
   },
   // Add Twitter card tags
   // twitter: {
   //   card: 'summary_large_image',
-  //   title: 'CodeCanvas - Innovative Software & Web Development',
+  //   title: 'Bitvalley - Innovative Software & Web Development',
   //   description: 'Custom digital solutions to elevate your business.',
   //   // site: '@yourtwitterhandle', // Replace with your Twitter handle
   //   // creator: '@yourtwitterhandle',

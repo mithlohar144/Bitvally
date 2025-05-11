@@ -1,3 +1,9 @@
+![Screenshot 2025-05-11 114035](https://github.com/user-attachments/assets/b35ae3c1-50a2-417e-aedc-5870894ce860)
+![Screenshot 2025-05-11 114132](https://github.com/user-attachments/assets/90435dc6-25cf-4bcc-a7e1-129383a0a59d)
+![Screenshot 2025-05-11 114340](https://github.com/user-attachments/assets/949b3dec-c44a-4b26-a821-6cd68786acd3)
+![Screenshot 2025-05-11 114536](https://github.com/user-attachments/assets/d68a2972-05b4-4882-90c3-f9bf4e7f0c08)
+
+
 # Bitvalley - Innovative Software & Web Development
 
 This is a Next.js web application for Bitvalley, a software and web development company. The application showcases the company's services, portfolio, technologies, client testimonials, and provides contact information. It also integrates Genkit for potential AI-powered features.

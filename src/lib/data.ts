@@ -1,4 +1,3 @@
-
 import { Code, Edit3, Smartphone, BarChart2, Search, Server, Palette, Users, Bot } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -221,5 +220,11 @@ export const technologies: Technology[] = [
 // For now, we'll just return a placeholder Lucide icon.
 export const getTechIcon = (techId: string): LucideIcon => {
   // This is a placeholder. In a real app, you'd map techId to specific icons.
+  // You could extend this with a switch statement or a map for actual icons.
+  // e.g. 
+  // switch(techId) {
+  //   case 'react': return ReactIcon; // Assuming you have a ReactIcon component or SVG
+  //   default: return Code;
+  // }
   return Code;
 };

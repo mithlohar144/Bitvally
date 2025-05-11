@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useRef } from 'react';
@@ -25,6 +24,8 @@ export function HeroSection() {
     const typingSpeed = 120;
     const deletingSpeed = 70;
     const pauseDuration = 2500;
+    let animationFrameId: number;
+    let timeoutId: NodeJS.Timeout;
 
     const type = () => {
       const currentHeadline = headlines[headlineIndex];
@@ -35,18 +36,18 @@ export function HeroSection() {
           if (charIndex === 0) {
             isDeleting = false;
             headlineIndex = (headlineIndex + 1) % headlines.length;
-            setTimeout(type, typingSpeed); // Start typing next headline
+            timeoutId = setTimeout(type, typingSpeed); // Start typing next headline
           } else {
-            setTimeout(type, deletingSpeed);
+            timeoutId = setTimeout(type, deletingSpeed);
           }
         } else {
           headlineRef.current.textContent = currentHeadline.substring(0, charIndex + 1);
           charIndex++;
           if (charIndex === currentHeadline.length) {
             isDeleting = true;
-            setTimeout(type, pauseDuration); // Pause before deleting
+            timeoutId = setTimeout(type, pauseDuration); // Pause before deleting
           } else {
-            setTimeout(type, typingSpeed);
+            timeoutId = setTimeout(type, typingSpeed);
           }
         }
       }
@@ -54,8 +55,7 @@ export function HeroSection() {
 
     if (headlineRef.current && cursorRef.current) {
       headlineRef.current.textContent = ""; // Start empty
-       // Initial call to start typing
-      setTimeout(type, typingSpeed);
+      timeoutId = setTimeout(type, typingSpeed); // Initial call to start typing
 
       // Cursor animation
       anime({
@@ -68,11 +68,11 @@ export function HeroSection() {
       });
     }
     
-    // Cleanup function to stop timeouts if component unmounts
     return () => {
-        // This is tricky with recursive setTimeouts. A more robust way would be to use a flag.
-        // For simplicity in this context, we're not clearing all timeouts perfectly.
-        // In a production app, manage timeouts more carefully (e.g., storing timeout IDs).
+        clearTimeout(timeoutId);
+        if (animationFrameId) {
+          anime.remove(cursorRef.current); // Stop anime.js animation on cursor
+        }
     };
 
   }, []);

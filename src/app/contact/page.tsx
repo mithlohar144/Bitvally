@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next';
 import { Section, SectionHeader } from '@/components/common/Section';
 import { ContactForm } from '@/components/contact-page/ContactForm';

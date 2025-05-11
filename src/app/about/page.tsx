@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next';
 import { Section, SectionHeader } from '@/components/common/Section';
 import Image from 'next/image';

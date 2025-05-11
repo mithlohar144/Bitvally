@@ -1,18 +1,20 @@
 
 "use client";
 
-// import type { Metadata } from 'next'; // Metadata is commented out, no need to import
 import { Section, SectionHeader } from '@/components/common/Section';
 import { technologies, Technology as TechnologyType, getTechIcon } from '@/lib/data';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion'; // Corrected import
+import { motion, AnimatePresence } from 'framer-motion'; 
+import type { Metadata } from 'next'; // Import Metadata type
 
-// export const metadata: Metadata = {
-//   title: 'Technologies We Use',
-//   description: 'Discover the robust and modern technology stack CodeCanvas employs, including React, Django, Laravel, Flutter, and more, to build exceptional digital products.',
-// };
+// Static metadata for client component
+export const metadata: Metadata = {
+  title: 'Technologies We Use',
+  description: 'Discover the robust and modern technology stack CodeCanvas employs, including React, Django, Laravel, Flutter, and more, to build exceptional digital products.',
+};
+
 
 const techCategories = ["All", ...new Set(technologies.map(tech => tech.category))];
 
@@ -32,9 +34,9 @@ const cardVariants = {
 export default function TechnologiesPage() {
   const [activeTab, setActiveTab] = useState<string>(techCategories[0]);
   
-  useEffect(() => {
-    document.title = "Technologies We Use | CodeCanvas";
-  }, []);
+  // useEffect(() => { // This is not needed if metadata is static and exported
+  //   document.title = "Technologies We Use | CodeCanvas";
+  // }, []);
 
   const filteredTechnologies = activeTab === "All" 
     ? technologies 
@@ -74,18 +76,17 @@ export default function TechnologiesPage() {
             >
               <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {filteredTechnologies.map((tech, index) => {
-                  const Icon = getTechIcon(tech.id); // Placeholder, replace with actual icons
+                  const Icon = getTechIcon(tech.id); 
                   return (
                     <motion.div
                       key={tech.id}
                       custom={index}
                       initial="hidden"
-                      animate="visible" // Use animate instead of whileInView for tab changes
+                      animate="visible" 
                       variants={cardVariants}
                     >
                       <Card className="h-full hover:shadow-lg transition-shadow">
                         <CardHeader className="flex-row items-center gap-3 space-y-0 pb-3">
-                           {/* Replace with actual SVG or image icons if available */}
                            <div className="p-2 bg-primary/10 rounded-md">
                              <Icon className="w-6 h-6 text-primary" />
                            </div>

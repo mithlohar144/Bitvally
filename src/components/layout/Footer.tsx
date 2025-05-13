@@ -35,9 +35,9 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">
           &copy; {currentYear} Bitvalley. All rights reserved.
         </p>
-        <p className="text-xs text-muted-foreground mt-2">
+{/*         <p className="text-xs text-muted-foreground mt-2">
           Built with Next.js and Tailwind CSS.
-        </p>
+        </p> */}
         {/* 
           Placeholder for live chat widget integration (e.g., Tawk.to)
           <script type="text/javascript">

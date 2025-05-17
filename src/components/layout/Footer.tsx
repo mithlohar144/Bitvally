@@ -33,7 +33,7 @@ export function Footer() {
           </Link>
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} Bitvalley. All rights reserved.
+          &copy; {currentYear} Bitvally. All rights reserved.
         </p>
 {/*         <p className="text-xs text-muted-foreground mt-2">
           Built with Next.js and Tailwind CSS.
